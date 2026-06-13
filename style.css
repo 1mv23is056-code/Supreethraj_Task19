@@ -1,0 +1,212 @@
+/* Base Layout Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logout-btn {
+    background-color: #e74c3c; /* Red variant specified */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Two-Column Workspace Layout */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 25px;
+    padding: 0 15px;
+}
+
+.left-section {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.right-section {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Heading Typography */
+h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    color: #34495e;
+}
+
+.section-desc {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Services Presentation Layout */
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 6px;
+    gap: 15px;
+}
+
+.service-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #e2e8f0;
+}
+
+.service-details {
+    flex: 1;
+}
+
+.service-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Control Buttons */
+button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.add-btn { background-color: #2ecc71; color: white; }
+.skip-btn { background-color: #95a5a6; color: white; }
+
+/* Dynamic Cart & Form Fields */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    background: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border-left: 4px solid #2ecc71;
+}
+
+.empty-message {
+    color: #95a5a6;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+.total-container {
+    margin: 20px 0;
+    padding-top: 15px;
+    border-top: 2px dashed #eceff1;
+}
+
+/* Form Styles */
+#bookingForm {
+    background: #fdfefe;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.book-now-btn {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.cart-helper-info {
+    background: #ebf5fb;
+    padding: 12px;
+    border-radius: 4px;
+    color: #2980b9;
+}

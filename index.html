@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="logo">🛠️ ServiceMatch</span>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <span class="username">Welcome, Guest</span>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <aside class="left-section">
+            <h2>Your Selection</h2>
+            
+            <div id="cartContainer">
+                <p class="empty-message">No items have been added yet.</p>
+            </div>
+
+            <div class="total-container">
+                <h3>Total Amount: $<span id="totalPrice">0</span></h3>
+            </div>
+
+            <form id="bookingForm" onsubmit="handleBooking(event)">
+                <h3>Book Now</h3>
+                <div class="form-group">
+                    <label>Full Name:</label>
+                    <input type="text" id="customerName" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label>Email Address:</label>
+                    <input type="email" id="customerEmail" required placeholder="john@example.com">
+                </div>
+                <button type="submit" class="book-now-btn">Confirm Booking</button>
+            </form>
+        </aside>
+
+        <main class="right-section">
+            <h2>Browse Our Services</h2>
+            <p class="section-desc">Select high-quality maintenance, cleaning, or structural repairs instantly.</p>
+            
+            <div id="servicesGrid" class="services-grid"></div>
+            
+            <div class="cart-helper-info">
+                <p>💡 <em>Tip: Review pricing variants above. Click "Add Item" to move things to your checkout area.</em></p>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
